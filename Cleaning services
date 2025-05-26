@@ -1,0 +1,71 @@
+export default function ClaudiasCleaning() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800">
+      <header className="bg-blue-900 text-white p-6 shadow-md flex items-center justify-between">
+        <div>
+          <h1 className="text-4xl font-bold">Claudia's Corporate & Commercial Cleaning</h1>
+          <p className="text-lg mt-2">Professional Cleaning Services for Offices, Businesses, and More</p>
+        </div>
+        <img src="/logo.png" alt="Claudia's Cleaning Logo" className="h-16 w-auto" />
+      </header>
+
+      <main className="p-8 grid gap-8">
+        <section>
+          <h2 className="text-2xl font-semibold mb-2">Our Services</h2>
+          <ul className="list-disc list-inside">
+            <li>Office Cleaning</li>
+            <li>Retail & Commercial Space Cleaning</li>
+            <li>Janitorial Services</li>
+            <li>Restroom Sanitation</li>
+            <li>Deep Cleaning & Disinfection</li>
+            <li>Eco-Friendly Cleaning Options</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-2">Pricing Packages</h2>
+          <ul className="list-disc list-inside">
+            <li><strong>Basic Package:</strong> $200/month - Weekly cleaning for small offices</li>
+            <li><strong>Standard Package:</strong> $500/month - Bi-weekly cleaning for medium offices</li>
+            <li><strong>Premium Package:</strong> $900/month - Daily cleaning for large spaces</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-2">Why Choose Us?</h2>
+          <p>
+            With years of experience, Claudia's Corporate & Commercial Cleaning is committed to keeping your workspace spotless, healthy, and welcoming. We prioritize reliability, thoroughness, and customer satisfaction.
+          </p>
+        </section>
+
+        <section className="bg-gray-100 p-6 rounded-xl shadow">
+          <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+          <p>Email: claudiascleaning@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Service Areas: San Diego & surrounding areas</p>
+        </section>
+
+        <section className="bg-white border border-gray-300 p-6 rounded-xl shadow">
+          <h2 className="text-2xl font-semibold mb-4">Book a Cleaning</h2>
+          <form className="grid gap-4">
+            <input type="text" placeholder="Your Name" className="border border-gray-300 p-2 rounded" required />
+            <input type="email" placeholder="Your Email" className="border border-gray-300 p-2 rounded" required />
+            <input type="tel" placeholder="Phone Number" className="border border-gray-300 p-2 rounded" required />
+            <select className="border border-gray-300 p-2 rounded" required>
+              <option value="">Select a Package</option>
+              <option value="basic">Basic Package</option>
+              <option value="standard">Standard Package</option>
+              <option value="premium">Premium Package</option>
+            </select>
+            <textarea placeholder="Additional Notes" className="border border-gray-300 p-2 rounded" rows={4}></textarea>
+            <button type="submit" className="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-800">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <footer className="bg-blue-900 text-white text-center p-4 mt-12">
+        <p>&copy; {new Date().getFullYear()} Claudia's Corporate & Commercial Cleaning Services. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
